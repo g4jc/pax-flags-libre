@@ -8,20 +8,23 @@
 # Please report bugs and new flags on GitHub:
 #   https://github.com/nning/linux-pax-flags
 #
+# Forked libre version which blacklists non-free software for Parabola here:
+# https://github.com/g4jc/pax-flags-libre
+#
 
-pkgname=linux-pax-flags
+pkgname=pax-flags-libre
 pkgdesc='Deactivates PaX flags for several binaries to work with PaX enabled kernels.'
 pkgver=2.0.14
 pkgrel=2
 arch=(any)
-url='https://github.com/nning/linux-pax-flags'
+url='https://github.com/g4jc/pax-flags-libre'
 license=(GPL3)
 depends=(ruby paxctl)
 optdepends=('sudo: Run as root automatically.')
 source=(
   $pkgname.sh $pkgname.rb $pkgname.8
   android.conf clamav.conf games.conf java.conf kde.conf polkit.conf qemu.conf
-  ruby.conf simple.conf skype.conf steam.conf valgrind.conf
+  ruby.conf simple.conf valgrind.conf
 )
 
 package() {

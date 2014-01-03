@@ -1,25 +1,25 @@
-linux-pax-flags(8)          System Manager's Manual         linux-pax-flags(8)
+pax-flags-libre(8)          System Manager's Manual         pax-flags-libre(8)
 
 
 
 NAME
-       linux-pax-flags - Configure PaX flags for several binaries
+       pax-flags-libre - Configure PaX flags for several binaries
 
 SYNOPSIS
-       linux-pax-flags [options] [filter]
+       pax-flags-libre [options] [filter]
 
 DESCRIPTION
-       linux-pax-flags  is  written  to configure PaX flags for a set of bina‐
-       ries.  It is intended to ease the usage of PaX (linux-pax)  or  grsecu‐
-       rity (linux-grsec, linux-grsec-lts) enabled kernel on Arch Linux.
+       pax-flags-libre  is  written  to configure PaX flags for a set of bina‐
+       ries.  It is intended to ease the usage of PaX (linux-libre-pax)  or  grsecu‐
+       rity (linux-libre-grsec, linux-libre-grsec-lts) enabled kernel on Parabola GNU/Linux.
 
        PaX flags for a set of binaries are collected in YAML format configura‐
        tion files. By  default,  every  .conf  file  from  /etc/pax-flags  and
-       /usr/share/linux-pax-flags  is  read. See the CONFIGURATION section for
+       /usr/share/pax-flags-libre  is  read. See the CONFIGURATION section for
        the file format.
 
        Root privileges are needed. If you  set  a  value  to  $PAX_FLAGS_SUDO,
-       linux-pax-flags will be called with sudo.
+       pax-flags-libre will be called with sudo.
 
 OPTIONS
        -c, --config  <path>
@@ -45,7 +45,7 @@ FILES
               Files for overriding the standard flag set and path pattern con‐
               figuration.
 
-       /usr/share/linux-pax-flags/*.conf
+       /usr/share/pax-flags-libre/*.conf
               The shipped configuration.
 
 CONFIGURATION
@@ -90,10 +90,10 @@ CONFIGURATION
        unit name.
 
        PSmXEr:
-         - /usr/lib/firefox/firefox:
-           status: "pidof firefox"
-           start: "firefox &"
-           stop: "killall firefox"
+         - /usr/lib/iceweasel/iceweasel:
+           status: "pidof iceweasel"
+           start: "iceweasel &"
+           stop: "killall iceweasel"
 
        This would configure custom actions for status, start and stop.
 
@@ -105,14 +105,14 @@ CONFIGURATION
        tern and cause it to be skipped.
 
        PSmXER:
-         - /usr/lib32/skype/skype:
+         - /usr/lib32/somebinary:
            header: create
 
        This  would cause paxctl to not convert the old binary header, but cre‐
        ate a new one. See paxctl(1) for more details.
 
 AUTHOR
-       henning mueller <henning@orgizm.net>
+       henning mueller <henning@orgizm.net
 
 SEE ALSO
        - paxctl(1)
@@ -120,4 +120,4 @@ SEE ALSO
 
 
 
-2013-02-18                                                  linux-pax-flags(8)
+2013-02-18                                                  pax-flags-libre(8)
