@@ -11,7 +11,7 @@ SYNOPSIS
 DESCRIPTION
        pax-flags-libre  is  written  to configure PaX flags for a set of bina‐
        ries.  It is intended to ease the usage of PaX (linux-libre-pax)  or  grsecu‐
-       rity (linux-libre-grsec, linux-libre-lts-grsec) enabled kernel on Parabola GNU/Linux.
+       rity (linux-libre-grsec, linux-libre-lts-grsec) enabled kernel on Parabola GNU/Linux-libre.
 
        PaX flags for a set of binaries are collected in YAML format configura‐
        tion files. By  default,  every  .conf  file  from  /etc/pax-flags  and
