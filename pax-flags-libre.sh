@@ -10,4 +10,4 @@ ruby=$(which ruby)
 
 $sudo systemctl --system daemon-reload
 
-$sudo linux-pax-flags.rb $@
+$sudo pax-flags-libre.rb $@
