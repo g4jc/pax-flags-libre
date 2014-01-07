@@ -14,7 +14,7 @@
 
 pkgname=pax-flags-libre
 pkgdesc='Deactivates PaX flags for several binaries to work with PaX enabled kernels.'
-pkgver=2.0.14
+pkgver=2.0.15-2
 pkgrel=2
 arch=(any)
 url='https://github.com/g4jc/pax-flags-libre'
