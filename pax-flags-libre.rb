@@ -164,7 +164,7 @@ end
 
 # Either default config paths or overridden ones.
 config_paths = if new_configs.empty?
-  ['/etc/pax-flags/*.conf', '/usr/share/pax-flags-libre/*.conf']
+  ['/etc/pax-flags-libre/*.conf', '/usr/share/pax-flags-libre/*.conf']
 else
   new_configs
 end
